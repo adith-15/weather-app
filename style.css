@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(0, 192, 166);
+}
+
+.container {
+    display: flex;
+    background-color: rgb(216, 255, 89);
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: 0.8s ease;
+}
+
+.title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: 'Slackey', cursive;
+    color: rgb(9, 63, 63)
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    background-color: white;
+    width: 80%;
+    padding: 5%;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+.search-box input {
+    margin-left: 20px;
+    color: cadetblue;
+    text-transform: uppercase;
+    font-family: 'Slackey', cursive;
+}
+
+.search-box input::placeholder {
+
+    text-transform: capitalize;
+}
+
+.search-box button {
+    background-color: rgba(2, 86, 138, 0.137);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: 0.6s ease-in-out;
+}
+
+.search-box button:hover {
+    background-color: rgb(0, 21, 255);
+    color: rgb(109, 223, 208);
+}
+
+.not-found {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    scale: 0;
+    opacity: 0;
+    font-family: 'Slackey', cursive;
+    font-size: medium;
+
+}
+
+.weather-box {
+
+    margin-top: 20px;
+    background-color: rgb(172, 194, 252);
+    text-align: center;
+    padding: 25px;
+
+}
+
+.weather-box img {
+    width: 70%;
+
+    border-radius: 20px;
+}
+
+.weather-box .temp {
+    font-family: 'Slackey', cursive;
+    font-size: 35px;
+    margin-top: 20px;
+    color: rgb(216, 255, 89);
+}
+
+.weather-box .desc {
+    font-family: 'Slackey', cursive;
+    color: rgb(20, 138, 138);
+    font-size: 20px;
+}
+
+.weather-deets {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    font-family: 'Slackey', cursive;
+    font-size: small;
+}
+
+.weather-deets .humidity,
+.weather-deets .wind {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+}
+
+.weather-deets .humidity span,
+.weather-deets .wind span {
+    font-size: large;
+    color: rgb(134, 116, 247)
+}
+
+.weather-deets .humidity {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.weather-deets .wind {
+    justify-content: flex-end;
+}
+
+.weather-deets .text {
+    margin-left: 10px;
+}
+
+
+.fadeIn {
+    animation: 0.6s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
