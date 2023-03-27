@@ -57,7 +57,7 @@ search.addEventListener('click', () => {
                     break;
 
                 default:
-                    image.src = '';
+                    image.src = 'default.jpg';
                     break;
             }
 
